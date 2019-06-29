@@ -2,3 +2,34 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*{max-width:100%; box-sizing: border-box;}
+
+.masonry {
+  column-count: 4;
+  column-gap: 1em;
+}
+
+.masonry .masonry-item {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+@media  (max-width: 1000px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media  (max-width: 800px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+
+@media  (max-width: 550px) {
+  .masonry {
+    column-count: 1;
+  }
+}

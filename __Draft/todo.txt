@@ -1,0 +1,2 @@
+[todo]
+- package.json/scripts/lib: build all libraries > ng build lib1 & lib2 ... --watch

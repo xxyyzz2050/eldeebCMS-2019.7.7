@@ -1,46 +1,33 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
-/dist
-/tmp
-/out-tsc
-# Only exists if Bazel was run
-/bazel-out
+node_modules
+__old
+*.lnk
+temp
+tmp
+*.cache
+*.log
+/.firebase
+**/*.js.map
+config.ts
+Thumbs.db
+.sass-cache
 
-# dependencies
-/node_modules
+#outputs
+dist
+out-tsc
+bazel-out
 
-# profiling files
-chrome-profiler-events.json
-speed-measure-plugin.json
-
-# IDEs and editors
-/.idea
+# IDEs
+.idea
 .project
 .classpath
-.c9/
-*.launch
 .settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+*.launch
 .history/*
+.vscode/*
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
-.DS_Store
-Thumbs.db
+# notes:
+# - don't ignore package-lock.json because it used by npm to install the exactly same versions of dependencies, https://stackoverflow.com/a/50868690
+# - add any file contains sensitive data, such as config.ts
+#---------------------------

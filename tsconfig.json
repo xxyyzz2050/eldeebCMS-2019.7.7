@@ -13,12 +13,19 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom"],
+    "locale": "en",
+    "strict": false,
+    "watch": false,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "noEmitOnError": false,
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"],
+      "config": ["config.ts", "../config.ts"],
+      "jszip": ["node_modules/jszip/dist/jszip.min.js"]
+    }
   }
 }

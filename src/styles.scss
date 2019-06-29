@@ -1,8 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-*{max-width:100%; box-sizing: border-box;}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 
 .masonry {
   column-count: 4;
@@ -15,20 +24,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   width: 100%;
 }
 
-@media  (max-width: 1000px) {
+@media (max-width: 1000px) {
   .masonry {
     column-count: 3;
   }
 }
 
-@media  (max-width: 800px) {
+@media (max-width: 800px) {
   .masonry {
     column-count: 2;
   }
 }
 
-
-@media  (max-width: 550px) {
+@media (max-width: 550px) {
   .masonry {
     column-count: 1;
   }

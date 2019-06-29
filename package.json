@@ -2,21 +2,25 @@
   "name": "eldeeb-cms",
   "version": "0.0.1",
   "scripts": {
-    "start": "npm run build  && npm run serve:server",
-    "start-dev": "npm run build-dev  && npm run serve:server",
+    "start": "npm run build  && npm run serve:firebase",
+    "start-dev": "npm run build-dev  && npm run serve:firebase",
     "build": "npm run build:browser && npm run build:server",
     "build-dev": "npm run build:browser-dev && npm run build:server-dev",
     "build:browser": "ng build --prod",
     "build:browser-dev": "ng build --prod=false",
     "build:server": "ng run eldeebCMS:server:production && npm run webpack:server",
     "build:server-dev": "ng run eldeebCMS:server && npm run webpack:server",
+    "build:firebase": "npm --prefix ./firebase run build --prod",
+    "build:firebase-dev": "npm --prefix ./firebase run build",
     "webpack:server": "npx webpack --config webpack.server.config.js --progress --colors",
     "serve:server": "nodemon dist/server --inspaect --open --watch",
     "serve:browser": "ng serve --open --watch",
+    "serve:firebase": "npm run serve:server | npx firebase serve",
     "serve": "npm run serve:server",
     "test": "ng test",
     "e2e": "ng e2e",
-    "code": "npx prettier --write --config=prettier.config.json \"**\" && npx tslint --fix \"**\""
+    "code": "npx prettier --write --config=prettier.config.json \"**\" && npx tslint --fix \"**\"",
+    "deploy:firebase": "npx firebase deploy"
   },
   "private": false,
   "dependencies": {

@@ -1,0 +1,4 @@
+module.exports = {
+  indexes: [],
+  fieldOverrides: []
+};

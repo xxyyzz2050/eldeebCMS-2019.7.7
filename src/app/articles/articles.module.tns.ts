@@ -8,10 +8,7 @@ import { ManageComponent } from './manage/manage.component';
 
 @NgModule({
   declarations: [ArticleComponent, IndexComponent, ManageComponent],
-  imports: [
-    ArticlesRoutingModule,
-    NativeScriptCommonModule
-  ],
+  imports: [ArticlesRoutingModule, NativeScriptCommonModule],
   schemas: [NO_ERRORS_SCHEMA]
 })
-export class ArticlesModule { }
+export class ArticlesModule {}

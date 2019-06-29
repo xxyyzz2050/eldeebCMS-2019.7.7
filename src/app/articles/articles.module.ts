@@ -8,9 +8,6 @@ import { ManageComponent } from './manage/manage.component';
 
 @NgModule({
   declarations: [ArticleComponent, IndexComponent, ManageComponent],
-  imports: [
-    CommonModule,
-    ArticlesRoutingModule
-  ]
+  imports: [CommonModule, ArticlesRoutingModule]
 })
-export class ArticlesModule { }
+export class ArticlesModule {}

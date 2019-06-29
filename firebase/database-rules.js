@@ -1,6 +1,6 @@
 module.exports = {
   rules: {
-    ".read": "auth != null",
-    ".write": "auth != null"
+    '.read': 'auth != null',
+    '.write': 'auth != null'
   }
 };

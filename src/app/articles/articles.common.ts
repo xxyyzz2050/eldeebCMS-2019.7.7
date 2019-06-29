@@ -1,10 +1,7 @@
 import { Routes } from '@angular/router';
 
-export const componentDeclarations: any[] = [
-];
+export const componentDeclarations: any[] = [];
 
-export const providerDeclarations: any[] = [
-];
+export const providerDeclarations: any[] = [];
 
-export const routes: Routes = [
-];
+export const routes: Routes = [];

@@ -1,0 +1,11 @@
+node_modules
+__Draft
+dist
+temp
+tmp
+.git/
+out-tsc
+hooks
+platforms
+#extensions that dosen't supported by any prettier parser
+**/*.!{js,ts,css,scss,json,json5,md,html,yaml}

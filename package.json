@@ -23,7 +23,9 @@
     "serve": "npm run serve:server",
     "test": "ng test",
     "e2e": "ng e2e",
-    "code": "npx prettier --write --config=prettier.config.json \"**\" && npx tslint --fix \"**\"",
+    "code": "npm run code:prettier && npm run code:tslint",
+    "code:prettier": "npx prettier --write --config=prettier.config.json \"**/*.{js,ts,css,scss,json,json5,md,html,yaml}\"",
+    "code:tslint": "npx tslint --fix \"**\"",
     "deploy:firebase": "npx firebase deploy",
     "doc": "npx compodoc -p package.json"
   },

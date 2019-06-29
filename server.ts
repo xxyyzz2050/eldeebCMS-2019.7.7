@@ -35,6 +35,13 @@ app.engine(
 app.set('view engine', 'html');
 app.set('views', DIST_FOLDER);
 
+app.get('/articles/api/*', async (req, res) => {
+  // todo: GetArticlesService.getArticle(req.url)
+  // todo: do we have to make the callback async?
+  const ArticlesAPI = require('./src/app/articles/api').ArticlesAPI;
+  await new ArticlesAPI().get(req.url).then(data => res.json(data));
+});
+
 // Example Express Rest API endpoints
 // app.get('/api/**', (req, res) => { });
 // Server static files from /browser

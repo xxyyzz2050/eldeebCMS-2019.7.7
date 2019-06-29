@@ -1,0 +1,16 @@
+mat-card {
+  width: 500px;
+  margin: 15px auto;
+  padding: 10px;
+  border: solid thin #c9c1c1;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+mat-card div[mat-card-avatar] {
+  overflow: hidden;
+  border: solid medium gray;
+}
+
+mat-card img {
+  margin: auto;
+}

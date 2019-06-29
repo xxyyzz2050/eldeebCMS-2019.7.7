@@ -2,6 +2,10 @@
   "name": "eldeeb-cms",
   "version": "0.0.1",
   "scripts": {
+    "android": "tns run android --bundle",
+    "ios": "tns run ios --bundle",
+    "mobile": "tns run --bundle",
+    "preview": "tns preview --bundle",
     "start": "npm run build  && npm run serve:firebase",
     "start-dev": "npm run build-dev  && npm run serve:firebase",
     "build": "npm run build:browser && npm run build:server",
@@ -25,6 +29,10 @@
   },
   "private": false,
   "dependencies": {
+    "nativescript-angular": "~7.2.0",
+    "nativescript-theme-core": "~1.0.4",
+    "reflect-metadata": "~0.1.12",
+    "tns-core-modules": "~5.2.0",
     "@angular/animations": "~8.0.1",
     "@angular/cdk": "~8.0.1",
     "@angular/common": "~8.0.1",
@@ -39,6 +47,7 @@
     "@angular/platform-server": "~8.0.1",
     "@angular/router": "~8.0.1",
     "@compodoc/compodoc": "^1.1.9",
+    "@nativescript/schematics": "^0.6.0",
     "@nguniversal/express-engine": "^7.0.2",
     "@nguniversal/module-map-ngfactory-loader": "v7.0.2",
     "cors": "^2.8.5",
@@ -52,6 +61,8 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
+    "nativescript-dev-webpack": "^0.20.0",
+    "@nativescript/schematics": "~0.4.0",
     "@angular-devkit/build-angular": "~0.800.0",
     "@angular/cli": "~8.0.4",
     "@angular/compiler-cli": "~8.0.1",
@@ -100,5 +111,8 @@
     "theme": "material",
     "hideGenerator": true,
     "gaID": ""
+  },
+  "nativescript": {
+    "id": "org.nativescript.ngsample"
   }
 }

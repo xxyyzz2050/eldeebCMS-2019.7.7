@@ -133,5 +133,8 @@
       }
     }
   },
-  "defaultProject": "eldeebCMS"
+  "defaultProject": "eldeebCMS",
+  "cli": {
+    "defaultCollection": "@nativescript/schematics"
+  }
 }

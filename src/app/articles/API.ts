@@ -1,4 +1,5 @@
 import { types } from './types'; // to use /// <reference path="./types.ts"/> remove export from ./types-> export namespace types{}
+import { env } from 'config';
 
 export class ArticlesAPI {
   /* link=/{{site=articles|jobs|.../}}($category/$link-title/)/{{type=category|article}}-{{ObjectId}}
@@ -24,7 +25,8 @@ export class ArticlesAPI {
       subtitle: 'article sub-title',
       content: '=========== content ============',
       author: { name: ['first', 'last'], img: 'assets/test/avatar.jpg' },
-      img: 'assets/test/post-image.jpg'
+      img: 'assets/test/post-image.jpg',
+      env
     };
     return data; // todo: return real data from database
   }

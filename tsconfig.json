@@ -25,6 +25,7 @@
     "paths": {
       "*": ["node_modules/*", "src/types/*"],
       "config": ["config.ts", "../config.ts"],
+      "env": ["src/environments/index.ts", "../src/environments/index.ts"],
       "jszip": ["node_modules/jszip/dist/jszip.min.js"]
     }
   }

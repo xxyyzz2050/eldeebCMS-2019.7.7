@@ -34,8 +34,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "src/environments/index.ts",
+                  "with": "src/environments/local.ts"
                 }
               ],
               "optimization": true,
@@ -52,6 +52,30 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                }
+              ]
+            },
+            "firebase": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/index.ts",
+                  "with": "src/environments/firebase.ts"
+                }
+              ]
+            },
+            "firebase-dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/index.ts",
+                  "with": "src/environments/firebase-dev.ts"
+                }
+              ]
+            },
+            "local-dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/index.ts",
+                  "with": "src/environments/local-dev.ts"
                 }
               ]
             }
@@ -123,8 +147,32 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "src/environments/index.ts",
+                  "with": "src/environments/local.ts"
+                }
+              ]
+            },
+            "firebase": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/index.ts",
+                  "with": "src/environments/firebase.ts"
+                }
+              ]
+            },
+            "firebase-dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/index.ts",
+                  "with": "src/environments/firebase-dev.ts"
+                }
+              ]
+            },
+            "local-dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/index.ts",
+                  "with": "src/environments/local-dev.ts"
                 }
               ]
             }

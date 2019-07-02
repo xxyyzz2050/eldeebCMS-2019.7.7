@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { baseUrl } from 'config';
-import { types } from './types';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Observable } from "rxjs";
+import { baseUrl } from "config";
+import { types } from "./types";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class ArticlesService {
   constructor(private http: HttpClient) {}
@@ -18,6 +18,7 @@ export class ArticlesService {
    */
   request(url): any {
     // todo: Observable<...>
+    console.log("== baseUrl ==", baseUrl);
     return this.http.get<types.Article | types.Post[]>(
       `${baseUrl}articles/api/${url}`
       // todo: dynamically get the current domain

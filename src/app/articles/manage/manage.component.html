@@ -1,1 +1,6 @@
-<p>manage works!</p>
+<form [formGroup]="form" (change)="onContentChanged($event)">
+  <quill-editor #editor [formControl]="form.controls['editor']">
+    ></quill-editor
+  >
+</form>
+{{ form }}

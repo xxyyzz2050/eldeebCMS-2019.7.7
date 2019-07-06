@@ -1,16 +1,16 @@
-import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { Observable } from "rxjs";
-import { baseUrl } from "config";
-import { types } from "./types";
-import env from "env";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { baseUrl } from 'config';
+import { types } from './types';
+import env from 'env';
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root'
 })
 export class ArticlesService {
   constructor(private http: HttpClient) {
-    console.log("== service/env ==", env);
+    console.log('== service/env ==', env);
   }
 
   /**
@@ -20,7 +20,7 @@ export class ArticlesService {
    * @return [description]
    */
   request(url): any {
-    console.log("== baseUrl ==", baseUrl);
+    console.log('== baseUrl ==', baseUrl);
 
     // todo: Observable<...>
 

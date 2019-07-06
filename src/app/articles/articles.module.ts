@@ -7,6 +7,7 @@ import { ArticlesRoutingModule } from './articles-routing.module';
 import { ArticleComponent } from './article/article.component';
 import { IndexComponent } from './index/index.component';
 import { ManageComponent } from './manage/manage.component';
+import { QuillModule } from 'ngx-quill';
 
 @NgModule({
   declarations: [ArticleComponent, IndexComponent, ManageComponent],
@@ -14,7 +15,8 @@ import { ManageComponent } from './manage/manage.component';
     CommonModule,
     ArticlesRoutingModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    QuillModule.forRoot()
   ],
   providers: []
 })

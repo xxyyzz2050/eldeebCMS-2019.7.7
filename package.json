@@ -56,7 +56,7 @@
     "express": "^4.15.2",
     "firebase": "^6.2.4",
     "hammerjs": "^2.0.8",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "nativescript-angular": "^8.0.1",
     "nativescript-theme-core": "~1.0.4",
     "ngx-quill": "^7.0.2",
